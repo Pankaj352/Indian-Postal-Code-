@@ -1,12 +1,48 @@
-# React + Vite
+# 📮 Pincode Lookup App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application to search Indian pincodes and retrieve details of post offices using the [India Post API](https://api.postalpincode.in/). Users can also filter post offices in real-time by name. Designed with Bootstrap and built for performance, error handling, and user experience.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app allows users to:
+- Enter a **6-digit Indian pincode**.
+- Click a **"Lookup" button** to fetch details of that pincode.
+- View a list of **Post Offices** including:
+  - Post Office Name
+  - Pincode
+  - District
+  - State
+- **Filter** post offices by name in real time.
+- See a **custom loader** while data is being fetched.
+- Receive clear **error messages** for invalid inputs, API failures, or empty filter results.
 
-## Expanding the ESLint configuration
+> 🔗 [Figma UI Design Reference](https://www.figma.com/file/3cNCfMB8eiGezRAkt7T91s/Contest-3)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Features
+
+- 📮 Lookup any **6-digit Indian Postal Code**
+- 🏤 Display **Post Office** details dynamically
+- 🔎 Real-time filtering by **Post Office name**
+- 🔄 Custom loader while fetching API
+- ❌ Input validation & error handling:
+  - Invalid pincode (non-6-digit)
+  - API response error
+  - No post office match on filtering
+
+## 🧰 Tech Stack
+
+- **Frontend**: React
+- **Styling**: Bootstrap 5, Custom CSS
+- **API**: [India Post Pincode API](https://api.postalpincode.in)
+
+## 🖼️ UI Preview
+
+> *(Add screenshots here when available)*  
+> Homepage | Pincode Results | Error States | Loader
+
+## 🏗️ Project Structure
+
+src/ ├── FilteredPinCode.jsx # Displays the filtered list of post offices 
+     ├── Form.jsx # Handles pincode input, API call, and UI state 
+  ├── App.jsx # Main app rendering structure 
+  ├── main.jsx 
