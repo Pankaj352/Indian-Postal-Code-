@@ -40,12 +40,6 @@ const FilterPinCode = ({ postOffices, onFilterChange, pinCode }) => {
         />
       </div>
 
-      {/* <input
-        type="text"
-        className="w-100 border-3 d-block px-2 py-1 mb-4"
-        style={{ border: "1px solid #000", borderRadius: "0px" }}
-        placeholder="Filter"
-      /> */}
 
       {/* postoffices */}
       <div className="row">
