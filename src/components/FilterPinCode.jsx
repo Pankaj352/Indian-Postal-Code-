@@ -6,7 +6,7 @@ const FilterPinCode = ({ postOffices, onFilterChange, pinCode }) => {
       <div>
         {/* display current pincode */}
         <p>
-          <strong>Pincode :</strong> {pinCode}?{pinCode}:{`Please enter pincode`}
+          <strong>Pincode :</strong> {pinCode?pinCode:`Please enter pincode`}
         </p>
         {/* display the message according to the pincode */}
         <p>
