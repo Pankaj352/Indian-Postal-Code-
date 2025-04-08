@@ -1,0 +1,25 @@
+
+
+/* form */
+
+.form-box{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.input-box{
+  border: 1px solid #000;
+  
+}
+
+.card-box{
+  width: 50%;
+}
+
+.formBtn{
+  background-color: #000 !important;
+  color: #fff !important;
+}
